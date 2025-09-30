@@ -29,6 +29,49 @@ body {
   color: #ccc;
   font-size: 1rem;
 }
+/* Navbar */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 10px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  transition: 0.4s ease;
+  background: transparent;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.125rem;
+  color: #FFD700;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #FFD700;
+  border-bottom: 2px solid #FFD700;
+  transform: scale(1.05);
+}
+
+#navbar.scrolled {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+}
+#navbar.scrolled ul li a { color: #fff; }
+#navbar.scrolled ul li a:hover {
+  color: #FFD700;
+  border-bottom: 2px solid #FFD700;
+}
 
 /* Menu section */
 #menu {
